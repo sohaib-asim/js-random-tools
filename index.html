@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Projects</title>
+        <link href="main.css" rel="stylesheet"  type="text/css" />
+        <script type="text/javascript" src="pig.js"></script>
+        <script type="text/javascript" src="tip.js"></script>
+        <script type="text/javascript" src="temp.js"></script>
+        <script type="text/javascript" src="sketch.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+    </head>
+
+    <body>
+
+        <div>
+            <h1 class="header1">js Projects</h1>
+        </div>
+        <div class="div1">
+            <div class="div11">
+                <p>
+                    Convert Celcius to Farenheit:
+                </p>
+
+                Celcius: <input id="Celciusin" type="number" name="Celcius"><br>
+                Farenheit: <span id="Farenheit"></span><br>
+
+                <button id="submit" onclick="CelciusToFarenheit()">Calculate</button><br />
+            </div>
+            <hr />
+            <div class="div12">
+                <p>
+                    Convert Farenheit to Celcius:
+                </p>
+
+                Farenheit: <input id="Farenheitin" type="number" name="Celcius"><br>
+                Celcius: <span id="Celcius"></span><br>
+
+                <button id="submit" onclick="FarenheitToCelcius()">Calculate</button>
+            </div>
+        </div>
+        <div class="div2">
+            <p>
+                Pig Latin Translator
+            </p>
+            <div>
+                Insert text here:
+            </div>
+            <br />
+            <textarea id="textarea">
+            </textarea>
+            <div>
+                <button onclick="Pig()">Translate</button>
+            </div><br />
+            <div id="PigResult">
+
+            </div><br />
+
+        </div>
+        
+        <div class="div3">
+            <div>
+
+                <p>
+                    Tip Calculator
+                </p>
+                Bill amount: <input type="number" id="amount"/><br />
+                Tip percentage: <input type="number" id="percentage"/><br />
+                Number of people: <input type="number" id="numberofp" /><br />
+            <br />
+            Tip amount:<span id="tipAmount"></span><br />
+            Total per person:<span id="totalPp"></span><br />
+            <button onclick="TipCalc()">Calculate</button>
+            </div>
+
+        </div>
+
+        
+    <br />
+
+    <div id="sketch">
+        <p>
+        This is the canvas of p5.js containing the paint application.
+        </p>
+        <!--canvas p5.js will go here-->
+    </div> 
+        
+    </body>
+
+</html>
